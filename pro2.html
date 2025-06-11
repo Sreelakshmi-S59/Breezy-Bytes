@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breezy Bytes</title>
+    <link rel="stylesheet" href="hstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets\logo 1.png" alt="Breezy Bytes Logo">
+            <h1>Breezy Bytes</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="pro2.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="events.html#events-section">Upcoming events</a></li>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="book-con.html#contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="back">
+        <video autoplay muted loop playinline class="background-video">
+            <source src="assets\bg-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <div class="intro-content">
+                <h2>Kerala's timeless haven.</h2>
+                <h1>Breezy Bytes</h1>
+                <p>Dine by the waves, savour every bite</p>
+                <button id="get-started-btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="card-main-feature">
+            <div id="malabari-bytes">
+                <div class="card-content">
+                    <p>From 399</p>
+                    <h1>MALABARI BITES</h1>
+                    <p>Explore the spices of northern Kerala</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-dine">
+            <h3>Dine-in</h3>
+            <p>Serene aesthetics</p>
+            <button>Bookings!!</button>
+        </div>
+        </section>
+        <script>
+            document.getElementById("malabari-bytes").onclick = function () {
+                window.location.href = "index.html#maincourse";
+            };
+
+            document.getElementById("bookings-btn").onclick = function () {
+                window.location.href = "book-con.html";
+            };
+
+            document.getElementById("get-started-btn").onclick = function () {
+                window.location.href = "index.html";
+            };
+
+
+    
+</script>
+<footer style="background-color: #333; color: white; padding: 2rem; text-align: center;">
+  <p>&copy; 2025 Breeze & Bytes | All rights reserved</p>
+  <p>📍 Baga Beach Road, North Goa | 📞 +91-98712-43210 | ✉ breezeandbytes@gmail.com</p>
+  <p>Open Daily: 11:00 AM – 11:00 PM</p>
+</footer>
+
+</body>
+
+</html>

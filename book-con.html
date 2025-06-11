@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="book-con.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+
+        <div class="container header-container">
+            <h1>Breezy Bytes</h1>
+            <nav>
+                <ul>
+                    <li><a href="pro2.html">Home</a></li>
+                    <li><a href="#booking-tabs">Bookings!!</a></li>
+                    
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-image-overlay"></div> <div class="container hero-content-container">
+                <div class="hero-content">
+                    <h2>Welcome to Beezy BYtes</h2>
+                    <p>Experience comfort and elegance at its finest.</p>
+                </div>
+
+                <div class="booking-form-wrapper"> <div class="booking-tabs" id="booking-tabs">
+                        <span class="tab active">Overnight Stays</span>
+                        <span class="tab">Day Use Stays</span>
+                    </div>
+
+                    <form class="booking-form-grid" id="bookings-btn">
+                        <div class="form-group search-destination">
+                            <label for="destination"><i class="fas fa-search"></i> Destination</label>
+                            <input type="text" id="destination" placeholder="City" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="check-in"><i class="far fa-calendar-alt"></i> Check-in Date</label>
+                            <input type="date" id="check-in" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="check-out"><i class="far fa-calendar-alt"></i> Check-out Date</label>
+                            <input type="date" id="check-out" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests"><i class="fas fa-user-friends"></i> Number of Guests</label>
+                            <input type="number" id="guests" min="1" value="2 adults, 2 children" required> </div>
+
+                        <div class="form-group add-flight">
+                            <a href="#"><i class="fas fa-plus"></i> Add a flight</a>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn-submit">SEARCH</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2>Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Free Wi-Fi</h3>
+                    <p>Stay connected with high-speed internet.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fine Dining</h3>
+                    <p>Enjoy exquisite meals at our restaurant.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Swimming Pool</h3>
+                    <p>Relax and unwind by our beautiful pool.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-parking"></i>
+                    <h3>Free Parking</h3>
+                    <p>Convenient and secure parking for all guests.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <address>
+                <p><i class="fas fa-map-marker-alt"></i> 123 tk street, tirupati, india</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@BreezyBytes.com</p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Breezy Bytes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <footer style="background-color: #333; color: white; padding: 2rem; text-align: center;">
+        <p>&copy; 2025 Breeze & Bytes | All rights reserved</p>
+        <p>📍 Baga Beach Road, North Goa | 📞 +91-98712-43210 | ✉ breezeandbytes@gmail.com</p>
+        <p>Open Daily: 11:00 AM – 11:00 PM</p>
+    </footer>
+    </body>
+    
+    </html>

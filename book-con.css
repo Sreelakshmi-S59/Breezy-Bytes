@@ -1,0 +1,664 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Very light grey for main background, subtle */
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+header{
+    background-color:#07233b;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height:100px;
+}
+.logo{
+    font-size: 2px;
+    font-weight: bold;
+    color: #333;
+
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+nav .nav-links{
+    list-style: none;
+    display:flex;
+    gap:25px;   
+}
+nav .nav-links li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+    padding:8px 12px;
+    transition: background-color 0.3s,color 0.3s;
+    border-radius:5px;
+}
+nav .nav-links li a:hover{
+    background-color: bisque;
+    color:#65000b;
+    width: 40px;
+}
+
+.container {
+    width: 90%; /* Wider container for content */
+    max-width: 1300px; /* Increased max-width */
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0; /* Reduced top/bottom padding to give more control per section */
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+ h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 1.8em; /* Slightly smaller header H1 to fit Agoda style */
+    text-align: left; /* Header title left-aligned */
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.05em;
+    color: #555;
+}
+
+/* Button style for 'Create Account' */
+.btn-create-account {
+    display: inline-block;
+    color: #007bff; /* Blue text, transparent background */
+    background-color: transparent;
+    border: 1px solid #007bff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+.btn-create-account:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* General Action Button (like 'Find Your Room') */
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #007bff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Header */
+header {
+    background: #ffffff; /* Pure white header */
+    padding: 15px 0; /* More padding */
+    border-bottom: 1px solid #eee; /* Very subtle light grey border */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Very light header shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo-container {
+    display:flex;
+    align-items: center;
+}
+
+
+.header-logo {
+    height:100px;
+    width:100px;
+}
+
+.header-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center;
+    justify-content: space-between; /* Space out items */
+    padding: 0; /* Remove container padding as flex handles spacing */
+}
+
+header h1 {
+    flex-shrink: 0; /* Don't shrink the title */
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.8em;
+    padding-left: 15px; /* Indent from left edge slightly */
+}
+
+header nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    text-align: left; /* Align nav items to the left within its space */
+    margin-left: 30px; /* Space from title */
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Use flexbox for nav items */
+}
+
+header li {
+    padding: 0 18px; /* Spacing between nav items */
+    position: relative;
+    top: 2px; /* Slight adjustment for alignment */
+}
+
+header a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #007bff;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    padding-right: 15px; /* Indent from right edge slightly */
+}
+
+.header-link {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.header-link:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2025/04/03/Hcom_Hero_Banner_Masked.webp?impolicy=fcrop&w=1200&h=400&q=mediumHigh'); /* Main hero image */
+    background-size: cover;
+    background-position: center bottom; /* Adjust position to show more water/bottom */
+    height: 450px; /* Fixed height for the hero image area */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    padding-top: 50px; /* Space from top edge */
+}
+
+.hero-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%); /* Fading gradient from bottom */
+    z-index: 1;
+}
+
+.hero-content-container {
+    position: relative;
+    z-index: 2; /* Bring content above overlay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure container takes full width */
+    padding-top: 0; /* Reset container padding */
+}
+
+.hero-content {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px; /* Space between hero text and floating form */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 0; /* No margin as it's the last element */
+}
+
+/* Booking Form Wrapper (The Floating Card) */
+.booking-form-wrapper {
+    background: #ffffff; /* White background for the form card */
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+    padding: 25px 30px; /* Padding inside the card */
+    width: 100%;
+    max-width: 900px; /* Max width similar to Agoda's form */
+    margin-top: 20px; /* Space from hero content */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.booking-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.booking-tabs .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #777;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 1px; /* Align with border */
+}
+
+.booking-tabs .tab.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.booking-tabs .tab:hover:not(.active) {
+    color: #0056b3;
+}
+
+
+.booking-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted grid for form inputs */
+    gap: 15px; /* Gap between form groups */
+    align-items: end; /* Align bottoms of inputs */
+}
+
+.form-group {
+    position: relative; /* For icon positioning */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.form-group label i {
+    color: #888;
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 12px 15px; /* More padding, space for icon */
+    border: 1px solid #ddd; /* Lighter border for inputs */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="date"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Subtle focus highlight */
+    outline: none;
+}
+
+/* Specific styling for destination input similar to Agoda */
+.form-group.search-destination label {
+    margin-bottom: 0; /* Label above input */
+    padding-left: 0; /* No icon padding here, icon inside input */
+    font-size: 0.8em;
+    color: #888;
+    font-weight: normal;
+}
+
+.form-group.search-destination input {
+    font-size: 1.1em; /* Larger font for destination */
+    font-weight: 600;
+    padding-left: 10px; /* Adjusted padding if no icon inside */
+}
+
+/* Adjust date picker icon style for consistency */
+.form-group input[type="date"]::-webkit-inner-spin-button,
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: none; /* Remove previous filter */
+    opacity: 0.7; /* Make it slightly transparent */
+    transition: opacity 0.3s ease;
+}
+.form-group input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+}
+
+/* Adjust guest input to mimic text, with a dropdown arrow */
+.form-group input[type="number"] {
+    -webkit-appearance: none; /* Remove default number input arrows */
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px; /* Space for custom arrow */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236c757d'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    font-weight: 600; /* Bold the guests text */
+}
+
+/* Add flight link */
+.form-group.add-flight {
+    text-align: left;
+    grid-column: span 2; /* Span across two columns */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group.add-flight a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.form-group.add-flight a i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+.form-group.add-flight a:hover {
+    text-decoration: underline;
+}
+
+/* Search Button */
+.full-width {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-submit {
+    background-color: #007bff; /* Agoda's signature blue */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Blue tint shadow */
+    width: 100%; /* Make it full width of its grid column */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px); /* More subtle lift */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Features Section */
+#features {
+    padding: 60px 0;
+    background: #ffffff; /* White background */
+    margin-top: 30px; /* Space below the booking form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for the section */
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Lighter, subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee; /* Very subtle border */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Slightly more prominent shadow on hover */
+}
+
+.feature-item i {
+    font-size: 3em;
+    color: #007bff; /* Primary blue for icons */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.5em;
+}
+
+.feature-item p {
+    font-size: 0.95em;
+    color: #666;
+    text-align: center;
+}
+
+/* About Us Section */
+#about-us {
+    padding: 60px 0;
+    background: #f8f8f8; /* Slightly off-white background */
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+#about-us p {
+    text-align: justify;
+    max-width: 850px;
+    margin: 0 auto 25px auto;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff; /* Keep it white */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05); /* Subtle top shadow */
+}
+
+#contact h2, #contact p {
+    color: #333; /* Dark text for contact section */
+    text-shadow: none; /* Remove text shadow */
+}
+
+#contact address {
+    font-style: normal;
+    margin-top: 30px;
+    color: #555;
+    text-shadow: none;
+}
+
+#contact address p {
+    margin-bottom: 15px;
+    font-size: 1.1em; /* Slightly adjusted */
+    text-align: center;
+}
+
+#contact address i {
+    color: #007bff; /* Primary blue for contact icons */
+    margin-right: 12px;
+    font-size: 1.2em;
+}
+
+
+/* Footer */
+footer {
+    background: #f0f2f5; /* Light grey footer */
+    color: #777; /* Softer text color */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+    font-size: 0.9em;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        width: 95%; /* More width on smaller screens */
+    }
+
+    header nav {
+        margin-left: 15px;
+    }
+
+    header li {
+        padding: 0 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .booking-form-wrapper {
+        padding: 20px;
+    }
+
+    .booking-form-grid {
+        grid-template-columns: 1fr; /* Stack inputs on smaller tablets */
+    }
+
+    .form-group.add-flight {
+        grid-column: span 1; /* Adjust span for single column */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap; /* Allow header items to wrap */
+        justify-content: center;
+    }
+
+    header h1 {
+        flex-basis: 100%; /* Title takes full width */
+        text-align: center;
+        padding-left: 0;
+    }
+
+    header nav {
+        flex-basis: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    header ul {
+        justify-content: center; /* Center nav items */
+    }
+
+    header li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .header-actions {
+        flex-basis: 100%;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    #hero {
+        height: 400px;
+        padding-top: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .booking-form-wrapper {
+        margin-top: 10px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr; /* Stack features on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+    .hero-content p {
+        font-size: 0.8em;
+    }
+    .btn-submit {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}

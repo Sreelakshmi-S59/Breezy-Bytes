@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">BREEZYBYTES</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+  </header>
+
+  <section class="menu">
+    <div class="tabs">
+      <button class="tab" data-tab="starters">Starters</button>
+      <button class="tab" data-tab="maincourse">Main Course</button>
+      <button class="tab" data-tab="desserts">Desserts</button>
+    </div>
+
+    <div class="tab-content" id="starters">
+      <h2>Hot Starters</h2>
+      <div class="menu-section">
+
+        <div class="dish-card">
+          <img src="assets\TBS.png" alt="Tomato Basil Soup">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Tomato Basil Soup</h3>
+          <p>A comforting blend of ripe tomatoes and fresh basil, simmered and lightly spiced.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\SCCS.png" alt="Sweet Corn Chicken Soup">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Sweet Corn Chicken Soup</h3>
+          <p>Creamy sweet corn soup with shredded chicken and delicate seasoning.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\HSS.png" alt="Hot and Sour Soup">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Hot and Sour Soup</h3>
+          <p>A spicy and tangy Indo-Chinese style soup with vegetables and soy-based flavors.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\PT.png" alt="Paneer Tikka">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Paneer Tikka</h3>
+          <p>Marinated cubes of cottage cheese grilled with bell peppers and onions in a clay oven.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\VS.png" alt="Vegetable Samosa">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Vegetable Samosa</h3>
+          <p>Golden-fried pastry filled with a spiced mixture of potatoes, peas, and aromatic herbs.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\HBK.png" alt="Hara Bhara Kabab">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Hara Bhara Kabab</h3>
+          <p>A healthy blend of spinach, peas, and potatoes shaped into tikkis and shallow-fried.          </p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\CC.png" alt="Crispy Corn">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Crispy Corn</h3>
+          <p>Crunchy sweet corn tossed in tangy and spicy Indo-Chinese seasoning.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\SD.png" alt="Spinach Delight">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Spinach Delight</h3>
+          <p>Crispy fried spinach served with garlic-flavoured spicy sauce.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\CM.png" alt="Chilli Mushroom">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Chilli Mushroom</h3>
+          <p>Stir-fried mushrooms in a spicy garlic-chilli sauce with onions and capsicum.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\C65.png" alt="Chicken 65">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Chicken 65</h3>
+          <p>Deep-fried, spicy chicken bites flavoured with curry leaves, garlic, and red chilli.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\PC.png" alt="Pandan Chicken">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Pandan Chicken</h3>
+          <p>Tender chicken morsels wrapped in pandan leaves and fried to juicy perfection.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\TC.png" alt="Tandoori Chicken">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Tandoori Chicken</h3>
+          <p>Classic tandoor-roasted chicken marinated in yogurt and traditional Indian spices.</p>
+        </div>
+        
+        <div class="dish-card">
+          <img src="assets\PK.png" alt="Prawn Koliwada">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Prawn Koliwada</h3>
+          <p>Coastal-style prawns deep-fried in a tangy, spiced batter from Mumbai’s Koliwada community.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\MSK.png" alt="Mutton Seekh Kebab">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Mutton Seekh Kebab</h3>
+          <p>Minced mutton skewers seasoned with Indian spices and cooked in a clay oven.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\CL.png" alt="Chicken Lollypop">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Chicken Lollypop</h3>
+          <p>Tender, juicy chicken drumsticks fried and tossed in sauce.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="tab-content" id="maincourse">
+      <h2>Main Course</h2>
+      <div class="menu-section">
+
+        <div class="dish-card">
+          <img src="assets\PBM.png" alt="Paneer Butter Masala">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Paneer Butter Masala</h3>
+          <p>Cottage cheese cubes simmered in a rich tomato-butter gravy, mildly spiced and creamy.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\DT.png" alt="Dal Tadka">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Dal Tadka</h3>
+          <p>Yellow lentils tempered with ghee, garlic, cumin, and red chillies — a North Indian classic.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\COM.png" alt="Chole Masala">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Chole Masala</h3>
+          <p>Spiced chickpeas cooked in onion-tomato gravy, a Punjabi favorite best paired with bhature or rice.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\VK.pn" alt="Vegetable Korma">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Vegetable Korma</h3>
+          <p>Mixed vegetables in a mildly spiced creamy coconut or cashew gravy, delicately flavored.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\KP.png" alt="Kadhi Pakora">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Kadhi Pakora</h3>
+          <p>Gram flour fritters in a tangy yogurt-based curry, tempered with spices.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\AGM.png" alt="Aloo Gobi Masala">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Aloo Gobi Masala</h3>
+          <p>Cauliflower and potatoes cooked with onions, tomatoes, and Indian spices. </p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\MMM.png" alt="Methi Malai Mutter">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Methi Malai Mutter</h3>
+          <p>Green peas and fenugreek leaves in a creamy, lightly sweetened gravy.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\KPA.png" alt="Kadai Paneer">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Kadai Paneer</h3>
+          <p>Paneer cubes cooked in a rustic, semi-dry onion-tomato gravy with bell peppers and crushed spices.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\BC.png" alt="Butter Chicken">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Butter Chicken</h3>
+          <p>A beloved dish with tandoori chicken chunks in a creamy, tomato-based makhani sauce.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\MRJ.png" alt="Mutton Rogan Josh">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Mutton Rogan Josh</h3>
+          <p>Kashmiri-style slow-cooked mutton in a rich, aromatic red curry.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\CCH.png" alt="Chicken Chettinad">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Chicken Chettinad</h3>
+          <p>Spicy South Indian chicken curry infused with black pepper, curry leaves, and roasted coconut.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\FM.png" alt="Fish Molee">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Fish Molee</h3>
+          <p>Kerala-style fish curry in a light coconut milk gravy with mild spices and curry leaves.</p>
+        </div>
+        
+        <div class="dish-card">
+          <img src="assets\PM.png" alt="Prawn Masala">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Prawn Masala</h3>
+          <p>Juicy prawns cooked in an onion-tomato masala with South Indian spices.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\EC.png" alt="Egg Curry">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Egg Curry</h3>
+          <p>Boiled eggs simmered in a spiced tomato-onion gravy, perfect with rice or paratha.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\NKC.png" alt="Nadan Kozhi Curry">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Nadan Kozhi Curry</h3>
+          <p>Traditional Kerala-style chicken curry made with roasted spices and coconut.</p>
+        </div>
+    </div>
+  </div>
+
+    <div class="tab-content" id="desserts">
+      <h2>Desserts</h2>
+      <div class="menu-section">
+        <div class="dish-card">
+          <img src="assets\EP.png" alt="Elaneer Payasam">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Elaneer Payasam</h3>
+          <p>Tender coconut cooked in creamy milk and jaggery.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\GJ - Copy.png" alt="Gulab Jamun">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Gulab Jamun</h3>
+          <p>Soft milk-solid dumplings soaked in rose-scented sugar syrup, served warm.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\RM.png" alt="Rasmalai">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Rasmalai</h3>
+          <p>Flattened paneer balls soaked in thickened saffron-infused milk, garnished with nuts.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\KK.png" alt="Kaju Katli">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Kaju Katli</h3>
+          <p>Diamond-shaped cashew fudge made with ground cashews, sugar, and ghee.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\JB.png" alt="Jalebi">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Jalebi</h3>
+          <p>Crisp spirals of deep-fried batter soaked in saffron syrup — sticky, sweet, and addictive.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\PAYA.png" alt="Payasam">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Payasam</h3>
+          <h4>(Palada / Semiya)</h4>
+          <p>Traditional South Indian dessert made with milk, sugar, and rice flakes or vermicelli.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\GH.png" alt="Gajar Halwa">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Gajar Halwa</h3>
+          <p>Carrot pudding slow-cooked with milk, sugar, and ghee, topped with nuts and raisins.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\MP.png" alt="Mysore Pak">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Mysore Pak</h3>
+          <p>A rich and crumbly ghee-loaded sweet made from gram flour and sugar.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\SH.png" alt="Shrikhand">
+          <span class="indicator red" title="Non-Veg"></span>
+          <h3>Shrikhand</h3>
+          <p>Creamy, hung curd dessert flavored with saffron, cardamom, and chopped pistachios.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\MR.png" alt="Malpua with Rabri">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Malpua with Rabri</h3>
+          <p>Deep-fried sweet pancakes soaked in syrup and topped with thickened milk (rabri).</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\KB.png" alt="Kesari Bath">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Kesari Bath</h3>
+          <p>A golden semolina pudding infused with saffron and garnished with nuts.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\KU.png" alt="Kulfi">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Kulfi(Chocolate / Malai / Pistachio / Mango)</h3>
+          <p>Traditional Indian ice cream — dense, creamy, and slow-melted with natural flavors.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\CP.png" alt="Chenna Poda">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Chenna Poda</h3>
+          <p>Baked cottage cheese dessert from Odisha with caramelized edges and a soft center.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\PH.png" alt="Phirni">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Phirni</h3>
+          <p>Ground rice pudding served chilled in clay pots, flavored with rose water and saffron.</p>
+        </div>
+
+        <div class="dish-card">
+          <img src="assets\BA.png" alt="Basundi">
+          <span class="indicator green" title="Veg"></span>
+          <h3>Basundi</h3>
+          <p>A rich, creamy dessert made by simmering milk until thickened, flavored with cardamom and topped with chopped nuts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer style="background-color: #333; color: white; padding: 2rem; text-align: center;">
+  <p>&copy; 2025 Breeze & Bytes | All rights reserved</p>
+  <p>📍 Baga Beach Road, North Goa | 📞 +91-98712-43210 | ✉ breezeandbytes@gmail.com</p>
+  <p>Open Daily: 11:00 AM – 11:00 PM</p>
+</footer>
+</body>
+</html>
