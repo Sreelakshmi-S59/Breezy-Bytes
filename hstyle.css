@@ -68,7 +68,7 @@ nav .nav-links li a:hover{
     top:100px;
     left:0;
     right:0;
-    bottom:135px;
+    bottom:175px;
     background-color: rgba(255,255,255, 0.2);
     display:flex;
     justify-content: center;
@@ -218,10 +218,11 @@ nav .nav-links li a:hover{
 }
  footer {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #12334f;
     color: white;
     margin-top: 2rem;
+    line-height: 1cm;
   }
 /*---Responsive---*/
 @media (max-width: 768px) {
@@ -258,3 +259,4 @@ nav .nav-links li a:hover{
     }
   }
   
+
