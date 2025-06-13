@@ -1,4 +1,14 @@
-/* General Styling */
+footer{
+  
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  background: #12334f;
+}
+footer p{
+    color: white;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -82,7 +92,7 @@ p {
     text-align: center;
     margin-bottom: 25px;
     font-size: 1.05em;
-    color: #555;
+    color: black;
 }
 
 /* Button style for 'Create Account' */
@@ -542,16 +552,7 @@ header a:hover {
 }
 
 
-/* Footer */
-footer {
-    background: #f0f2f5; /* Light grey footer */
-    color: #777; /* Softer text color */
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 0;
-    font-size: 0.9em;
-    border-top: 1px solid #eee;
-}
+
 
 /* Responsive Design */
 @media (max-width: 992px) {
@@ -662,3 +663,5 @@ footer {
         padding: 12px 20px;
     }
 }
+
+
