@@ -43,7 +43,8 @@ header{
 nav .nav-links{
     list-style: none;
     display:flex;
-    gap:25px;   
+    gap:25px;  
+    background-color: #07233b;
 }
 nav .nav-links li a{
     text-decoration: none;
