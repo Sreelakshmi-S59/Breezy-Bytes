@@ -111,10 +111,9 @@
    display: flex;
    align-items: center;
    font-size: 24px;
-   /* Fixed from 2px */
    font-weight: bold;
    color: white;
-   /* Changed from #333 to white */
+  
  }
 
  .logo h1 {
@@ -128,7 +127,6 @@
    height: 70px;
    border-radius: 50%;
    margin-right: 15px;
-   /* Increased from 5px */
    vertical-align: middle;
  }
 
